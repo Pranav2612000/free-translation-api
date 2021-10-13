@@ -85,7 +85,7 @@ def translate():
         translatedObj = translator.translate(q, dest=target, src=source)
 
     #print(translator.translate('veritas lux mea', src='la'))
-    response = {"translatedText": translatedObj.text}
+    response = {"translatedText": translatedObj.text, "src": translatedObj.src, "dest": translatedObj.dest}
     return response
 
 
